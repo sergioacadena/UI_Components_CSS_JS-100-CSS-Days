@@ -1,0 +1,186 @@
+body
+{
+    background-color: #f19b9b;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container
+{
+    width: 400px;
+    height: 400px;
+    background-color: #e95858;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 2px rgba(58, 23, 23, 0.404);
+}
+.card{
+
+    width: 74%;
+    height: 54%;
+    background-color: #f8f07b;
+    border-radius: 8px;
+    position: absolute;
+    box-shadow: 0 0 4px 2px rgba(58, 23, 23, 0.404);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card-header{
+    width: 100%;
+    height: 30%;
+    background-color: #f19b9b;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1px;
+}
+.card-header div{
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    
+}
+.card-header h2, .card h3{
+    color: rgb(66, 65, 65);
+    padding: 0;
+    margin: 0;
+    font-size: smaller;
+}
+.date-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.total-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.grafic-container{
+
+    width: 100%;
+    height: 70%;
+    background-color: rgb(195, 247, 9);
+    border-radius: 0 0 8px 8px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.grafic{
+    width: 100%;
+    height: 85%;
+    background-color: #fafaf7;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.marcadores{
+    width: 100%;
+    height: 25%;
+    background-color: rgb(236, 241, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: solid 1px rgb(202, 202, 202);
+}
+.grafica{
+    width: 100%;
+    height: 75%;
+    background-color: rgb(236, 241, 241);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mensaje{
+    background-color: rgb(96, 43, 243);
+    opacity: 0;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 50% 100%, 29% 75%, 0 74%);
+    width: fit-content;
+    height: 0px;
+    position: absolute;
+    z-index: 1;
+    top:10px;
+    left: 0px;
+    transform: translateY(-24%); /* Ajustar el centro del div */
+    transform-origin: bottom center;
+    transition: transform 0.4s ease-out, opacity 0.6s ease-out;
+}
+.mensaje h5{
+    color: white;
+    font-size: x-small;
+    margin: 4px;
+    margin-bottom: 10px;
+    padding: 0;
+    
+    
+}
+.svg-grahp{
+    background-color: transparent;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    
+}
+.svg-graph__1{
+    position: relative;
+    z-index: 1;
+}
+.svg-graph__2{
+    position: relative;
+    z-index: 4;
+}
+.linea1{
+    stroke: rgb(243, 43, 176);
+    stroke-width: 6;
+}
+
+.nodo-1{
+    fill: rgb(243, 43, 176);
+    stroke-width: 10;
+       
+}
+
+.linea2{
+    stroke: rgb(43, 196, 243);
+    stroke-width: 6;
+    position: relative;
+    z-index: 2;
+}
+.nodo-2{
+    fill: rgb(43, 196, 243);
+    stroke-width: 10;
+}
+.nodo-1:hover, .nodo-2:hover{
+    cursor: pointer;
+}
+
+.ejex-dias{
+    width: 100%;
+    height: 25%;
+    background-color: rgb(236, 241, 241);
+    color: rgb(66, 65, 65);
+    border-top: solid 1px rgb(202, 202, 202);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    font-size: smaller;
+}

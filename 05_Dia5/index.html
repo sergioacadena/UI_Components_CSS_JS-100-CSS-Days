@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+
+                <div class="date-info">
+                    <h2>MONDAY, 22</h2>
+                    <h3>June 2020</h3>
+                </div>
+                <div class="total-info">
+                    <h2>TOTAL</h2>
+                    <h3>$ 3500.00</h3>
+                </div>
+
+
+            </div>
+            <div class="grafic-container">
+                <div class="grafic">
+                    <div class="marcadores">
+                        <div class="marcador">
+                            <div class="marcador-color marcador-1"></div>
+                            <p>Income</p>
+                        </div>
+                        <div class="marcador">
+                            <div class="marcador-color marcador-2"></div>
+                            <p>Expenses</p>
+                        </div>
+                    </div>
+                    <div id="grafica" class="grafica">
+                        
+                        <svg class="svg-grahp svg-graph__1" width="100%" height="50%" viewBox="0 0 400 200" >
+                            <!-- Linea 1 Definiendo las líneas que conectan los nodos --> 
+                            
+                            <line class="linea1" x1="-380" y1="140" x2="-180" y2="100" />
+                            <circle id="linea1Nodo0" class="nodo-1" cx="-380" cy="140" r="14" />
+
+                            <line class="linea1" x1="-180" y1="100" x2="20" y2="120" />
+                            <circle id="linea1Nodo1" class="nodo-1" cx="-180" cy="100" r="14" />
+
+                            <line class="linea1" x1="20" y1="120" x2="220" y2="20" />
+                            <circle id="linea1Nodo2" class="nodo-1" cx="20" cy="120" r="14" />
+
+                            <circle id="linea1Nodo3" class="nodo-1" cx="220" cy="20" r="14" />
+                            <line class="linea1" x1="220" y1="20" x2="420" y2="150" />
+
+                            <circle id="linea1Nodo4" class="nodo-1" cx="420" cy="150" r="14" />
+                            <line class="linea1" x1="420" y1="150" x2="620" y2="160" />
+
+                            <circle id="linea1Nodo5" class="nodo-1" cx="620" cy="160" r="14" />
+                            <line class="linea1" x1="620" y1="160" x2="800" y2="100" />
+
+                            <circle id="linea1Nodo6" class="nodo-1" cx="800" cy="100" r="14" />
+                                                                                                                            
+                        </svg>
+
+                        <svg class="svg-grahp svg-graph__2" width="100%" height="50%" viewBox="0 0 400 200" >
+                            <!-- Línea 2 Definiendo las líneas que conectan los nodos -->
+                            <line class="linea2" x1="-380" y1="40" x2="-180" y2="100" />
+                            <circle id="linea2Nodo0" class="nodo-2" cx="-380" cy="40" r="14" />
+
+                            <line class="linea2" x1="-180" y1="100" x2="20" y2="110" />
+                            <circle id="linea2Nodo1" class="nodo-2" cx="-180" cy="100" r="14" />
+
+                            <line  class="linea2" x1="20" y1="110" x2="220" y2="90" />
+                            <circle id="linea2Nodo2" class="nodo-2" cx="20" cy="110" r="14" />
+
+                            <circle id="linea2Nodo3" class="nodo-2" cx="220" cy="90" r="14" />
+                            <line class="linea2" x1="220" y1="90" x2="420" y2="160" />
+
+                            <circle id="linea2Nodo4" class="nodo-2" cx="420" cy="160" r="14" />
+                            <line class="linea2" x1="420" y1="160" x2="620" y2="170" />
+
+                            <circle id="linea2Nodo5" class="nodo-2" cx="620" cy="170" r="14" />
+                            <line class="linea2" x1="620" y1="170" x2="810" y2="100" />
+
+                            <circle id="linea2Nodo6" class="nodo-2" cx="810" cy="100" r="14" />
+                                                                                                                            
+                        </svg>
+                    </div>
+
+                </div>
+
+                <div class="ejex-dias">
+                    <div class="dias">
+                        <p>Mon</p>
+                    </div>
+                    <div class="dias">
+                        <p>Tue</p>
+                    </div>
+                    <div class="dias">
+                        <p>Wed</p>
+                    </div>
+                    <div class="dias">
+                        <p>Thu</p>
+                    </div>
+                    <div class="dias">
+                        <p>Fri</p>
+                    </div>
+                    <div class="dias">
+                        <p>Sat</p>
+                    </div>
+                    <div class="dias">
+                        <p>Sun</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

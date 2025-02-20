@@ -1,0 +1,122 @@
+body{
+    background-color: #f0ecec;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mask{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background-color: rgb(22, 32, 41);
+    mask-image: radial-gradient(circle, transparent 35%, rgb(0, 0, 0) 36%);
+}
+.circle_masck{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(22, 32, 41, 0.692);
+    border: solid 4px rgb(22, 32, 41);
+    transition: background-color 1.2s;
+    border-radius: 50%;
+}
+.container{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background-color: rgb(22, 32, 41);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.363);
+    
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    background-color: #6de0fd;
+    background: linear-gradient(to bottom, 
+        var(--color1, #6de0fd) var(--percent1, 65%), 
+        var(--color2, #fde76d) var(--percent2, 35%)
+    );
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+.sun_circle{
+    width: 115%;
+    height: 115%;
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    top:13%;
+    left:-6%;
+    transition: transform 0.9s ease-in-out;
+    transform-origin: center;
+}
+.sun_circle::after{
+    width: 16%;
+    height: 16%;
+    background-color: #fbff00;
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.piramid{
+    width: 0;
+    height: 0;
+    border-left: 64px solid transparent;
+    border-right: 64px solid transparent;
+    border-bottom: 64px solid #fcf6eb;
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    
+}
+.piramid_side{
+    width: 200px;
+    height: 200px;
+    background-color: #adadad;
+    clip-path: polygon(50% 34%, 58% 66%, 82% 66%);
+    transition: background-color 1.2s;
+    position: absolute;
+    top:49%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.piramid_shadow{
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(98% 68%, 18% 66%, 82% 66%);
+    background-color: #88888885;
+    transition: all 1.2s;
+    position: absolute;
+    top:49%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+    <title>Dia 7 - 100 Dias css</title>
+</head>
+<body>
+    <div class="container">
+        <div class="tarjetas-container">
+
+            <div class="tarjeta-menu" id="tarjetaMenu">
+
+                <ul>
+                    <li>
+                        <span class="material-symbols-outlined">dashboard_customize</span>
+                        Dashboard
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">person</span>
+                        Profile
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">notifications</span>
+                        Notificatiosn
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">forum</span>
+                        Messeges
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">settings</span>
+                        Settings</li>
+                </ul>
+
+            </div>
+            <div class="tarjeta-notificaciones" id="tarjetaNotificaciones">
+
+                <div class="tarjeta-notificaciones--header">
+                    <i class='bx bx-menu-alt-left' id="botonMenu"></i>
+                    <h3>Notificaciones</h3>
+                    <i class='bx bx-search-alt-2' id="searchIcon"></i>
+                    <input type="text" name="" id="inputSearch" class="input-search" placeholder="Search ...">
+                </div>
+
+                <div class="notificaciones-listas">
+                    <div class="notificaciones-listas__bloques">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="notificaciones-listas__datos">
+                        <div class="listas-datos-cotainer__hora">
+                            <div class="notificaciones-hora__bloque"></div>
+                            <div class="notificaciones-hora__circle"></div>
+                            <span class="notificaciones-hora__hora">9:00 P.M.</span>
+                        </div>
+                        <div class="listas-datos-cotainer__notificacion">
+                            <div class="cotainer__notificacion--bloque"></div>
+                            <h3 class="cotainer__notificacion--text">Pepito Perez<span>ha dado like</span></h3>
+                        </div>
+                    </div>
+
+                    <div class="notificaciones-listas__bloques">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="notificaciones-listas__datos">
+                        <div class="listas-datos-cotainer__hora">
+                            <div class="notificaciones-hora__bloque"></div>
+                            <div class="notificaciones-hora__circle"></div>
+                            <span class="notificaciones-hora__hora" id="notificacionHoraSpan">9:00 P.M.</span>
+                        </div>
+                        <div class="listas-datos-cotainer__notificacion">
+                            <div class="cotainer__notificacion--bloque"></div>
+                            <h3 class="cotainer__notificacion--text">Pepito Perez<span>ha dado like</span></h3>
+                        </div>
+                    </div>
+
+                    <div class="notificaciones-listas__bloques">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="notificaciones-listas__datos">
+                        <div class="listas-datos-cotainer__hora">
+                            <div class="notificaciones-hora__bloque"></div>
+                            <div class="notificaciones-hora__circle"></div>
+                            <span class="notificaciones-hora__hora" id="notificacionHoraSpan">9:00 P.M.</span>
+                        </div>
+                        <div class="listas-datos-cotainer__notificacion">
+                            <div class="cotainer__notificacion--bloque"></div>
+                            <h3 class="cotainer__notificacion--text" id="cotainer__notificacionText">Pepito Perez<span>ha dado like</span></h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

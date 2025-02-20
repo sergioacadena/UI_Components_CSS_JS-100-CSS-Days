@@ -1,0 +1,212 @@
+body{
+    background-color: rgb(243, 242, 239);
+    box-sizing: border-box;
+}
+.container{
+    background-color:transparent;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 8px 6px #7777779f;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.cover__circle{
+    position: absolute;
+    top: -90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 2px solid #eeeded;
+    box-shadow: 0 0 8px 4px #22222260;
+    z-index: 6;
+    overflow: hidden;
+    transition: top 1.1s ease-in-out;
+}
+.cover__circle img{
+    position: relative;
+    width: auto;
+    height: 100%;
+}
+.cover_top{
+    width: 100%;
+    height: 45%;
+    top:-45%;
+    position: absolute;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    background-color: #2e2e2e;
+    z-index: 4;
+    transition: top 0.8s ease-in-out;
+    overflow: hidden;
+}
+.cerrar-popUp{
+    background-color: #fa7b7b;
+    color: #eeeded;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    height: 46px;
+    width: 46px;
+    position: absolute;
+    z-index: 2;
+    left: 86%;
+    top: -200%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.6s, color 0.6s, top 1.4s ease-in-out;
+}
+.cerrar-popUp span{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.cerrar-popUp:hover {
+    background-color: #f5f5f5;
+    color: #eb5151;
+}
+.cover_top img{
+ position: absolute;
+ width: 100%;
+ height: auto;
+}
+.cover__bottom{
+    width: 100%;
+    height: 55%;
+    bottom:-55%;
+    position: absolute;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #f77389;
+    z-index: 4;
+    transition: bottom 0.8s ease-in-out; 
+}
+.cover__bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+.cover__bottom h4{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 600;
+    padding: 17%;
+    padding-bottom: 16px;
+    margin: 5px;
+    text-align: center;
+    color: #eeeded;
+}
+.cover__bottom--iconosRedes{
+    width: 100%;
+    height: 28%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+}
+.cover__bottom--iconosRedes span{
+    color: #eeeded;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #eeeded;
+    transition: color 0.6s, background-color 0.6s;
+}
+.cover__bottom--iconosRedes span:hover{
+    cursor: pointer;
+    color: #f77389;
+    box-shadow: 1px 1px 2px 1px #7c4f4f5e;
+    background-color: #eeeded;
+}
+
+.contenedor__imagenes{
+    background-color: #f0f0f0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    box-sizing: border-box;
+    padding: 1px;
+}
+
+.contenedor__imagen--foto{
+    width: 98%;
+    height: 98%;
+    background-color: aliceblue;
+    position: relative;
+    display: flex;  
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;  
+    cursor:pointer;
+    overflow: hidden;
+}
+.imagen__foto{
+    position: absolute;
+    width: auto;
+    height: 100%;
+   
+}
+.imagen__foto--btnOver{
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: rgba(140, 141, 141, 0);
+    transition: background-color 0.8s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.contenedor__imagen--foto:hover .imagen__foto--btnOver{
+    cursor:pointer;
+    background-color: rgba(0, 0, 0, 0.397);
+    width: 100%;
+    height: 100%;
+    filter: brightness(1) contrast(2) saturate(1.0);
+    
+}
+.foto__btnOver--circle{
+    width: 28%;
+    height: 28%;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgba(245, 155, 163, 0.404); /* Color inicial */
+    box-shadow: 0 0 2px 1px #5252525b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: scale(2.4);
+    opacity: 0;
+    color: transparent; /* Color inicial */
+    transition: transform 0.8s ease, background-color 0.8s ease, opacity 0.8s ease;
+    
+    
+}
+.contenedor__imagen--foto:hover .imagen__foto--btnOver .foto__btnOver--circle{
+    transform: scale(1);
+    background-color: rgb(243, 106, 129);
+    color: #f0f0f0;
+    opacity: 1;
+}
+.foto__btnOver--circle span{
+    position: absolute; 
+    font-size: 200%;
+    
+}

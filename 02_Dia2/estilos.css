@@ -1,0 +1,70 @@
+body{
+    background-color: #f4f8f8;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedorPrincipal{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    background-color: blueviolet;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.contenedorBarras{
+    
+    height: 64px;
+    width: 80px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.contenedorBarras:hover{
+    cursor: pointer;
+}
+.barra{
+    background-color: seashell;
+    width: 100%;
+    height: 8px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 8px 1px rgba(20, 20, 20, 0.2);
+    transition: all 0.3s;
+}
+.contenedorBarras:hover .barra{
+    background-color: #f4f8f8;
+    box-shadow: 1px 1px 16px 2px rgba(20, 20, 20, 0.4);
+}
+.barra__1--transform{
+    position: relative;
+    transform: translate(0%, 21px) rotate(0deg);   
+}
+.barra__1--rotar{
+    transform-origin: center;
+    transform: translate(0%, 21px) rotate(45deg);   
+}
+.barra__2--transform{
+    position: relative;
+    transform: scale(0);;   
+}
+.barra__3--transform{
+    position: relative;
+    transform: translate(0%, -21px) rotate(0deg);      
+}
+.barra__3--rotar{
+    transform-origin: center;
+    transform: translate(0%, -21px) rotate(135deg);
+    
+}
+
