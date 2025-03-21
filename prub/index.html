@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+
+    <svg viewBox="0 0 200 200" width="200" height="200" class="center">
+        <!-- Sobre -->
+        <path id="envelope" 
+            d="M4 3 L4 110 L196 110 L196 3" 
+            stroke="#f4f4f4" fill="none" stroke-width="3"
+            stroke-dasharray="500" stroke-dashoffset="500"
+            opacity="1">
+        </path>
+
+        <path id="envelope2" 
+            d="M196 4 L6 4 L98 90 L196 4 Z" 
+            stroke="#f4f4f4" fill="none" stroke-width="3"
+            stroke-dasharray="600" stroke-dashoffset="600"
+            opacity="1">
+        </path>
+
+        <path id="plain1" 
+            d="M196 4 L98 90 L98 150 L196 4  Z" 
+            stroke="#f56448" fill="none" stroke-width="3"
+            stroke-dasharray="0" stroke-dashoffset="0"
+            opacity="1">
+        </path>
+        <path id="plain2" 
+            d="M196 4 L4 80 L186 110 L196 4 Z" 
+            stroke="#f5f448" fill="none" stroke-width="3"
+            stroke-dasharray="0" stroke-dashoffset="0"
+            opacity="1">
+        </path>
+         
+        
+    </svg>
+    <div class="boton" id="btn">
+        btn
+    </div>
+</div>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #202020;
+        }
+        .boton{
+            cursor: pointer;
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #83b9a9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+        }
+        .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 400px;
+            background-color: #056448;
+        }
+      
+
+    @keyframes drawEnvelope {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+        .center{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(13, 107, 107);
+        }
+       
+    </style>
+    
+    <script>
+        const envelope = document.getElementById('envelope');
+        const envelope2 = document.getElementById('envelope2');
+        const btn = document.getElementById('btn');
+        btn.addEventListener('click', () => {
+            envelope.style.animation = 'drawEnvelope 0.6s linear forwards';
+            envelope2.style.animation = 'drawEnvelope 0.6s linear forwards';
+        });
+    </script>
+</body>
+</html>

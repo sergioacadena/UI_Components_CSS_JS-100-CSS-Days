@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400&display=swap">
+
+
+    
+    <title>Día 15 - 100 Días css</title>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="card">
+            
+            <div class="title">
+                <h2>Drop file to upload</h2>
+            </div>
+
+            <div class="container__upload">
+
+                <div id="loadingAnimation" class="loading__Animation">
+                    <div id="progressBar" class="progress__bar"></div>
+                    <div class="container__loading__icons" >
+                        <span id="loaddingIcon" class="material-symbols-outlined">
+                            cached
+                        </span>
+                        <span id="loaddingDoneIcon" class="material-symbols-outlined loadding_doneIcon">
+                            done_all
+                        </span>
+
+                    </div>
+                    <button id="buttonLoadingDone" class="button_upload">
+                        <h4 id="textButtonLoadding">Loadding...</h4>
+                    </button>
+                </div>
+
+                <div id="uploadCard" class="upload_card" title="No se ha seleccionado ningún archivo">
+                    <span id="uploadIcon" class="material-symbols-outlined">
+                        cloud_upload
+                    </span>
+                    <img id="previewImage" src="" >
+                    <p id="fileName"></p>
+                    <input type="file" id="inputFile" class="input_file" title=""/>
+                </div>
+
+                <button id="buttonUpload" class="button_upload">
+                    <h4>Up Load File</h4>
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
